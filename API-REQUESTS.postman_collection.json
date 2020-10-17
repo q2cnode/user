@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "2d659a8c-0f28-458f-b00f-4936a263ae08",
+		"name": "API-REQUESTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USER - POST request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": \"Joycee\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "To add new user with unique ID"
+			},
+			"response": []
+		},
+		{
+			"name": "USERS - GET request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "To fetch all users"
+			},
+			"response": []
+		},
+		{
+			"name": "USERS - PATCH request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": \"Joycee Paragas\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/64cd047c-1fed-40de-a82e-78ea03693070",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"64cd047c-1fed-40de-a82e-78ea03693070"
+					]
+				},
+				"description": "Updating user details by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "USER - GET request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/c3978d21-8895-401b-ad2e-4973ab4cc6e7sa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"c3978d21-8895-401b-ad2e-4973ab4cc6e7sa"
+					]
+				},
+				"description": "Get user by id"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
